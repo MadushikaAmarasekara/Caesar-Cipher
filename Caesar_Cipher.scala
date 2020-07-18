@@ -12,7 +12,7 @@ object Caesar_Cipher extends App{
 			if (text.contains(st.toUpper))					//checks if the uppercase of character "st" is in the given alphabet "text"
 				text((st - text.head.toLower + shift + text.length) % text.length).toLower	//shifts the character down the alphabet "shift" number of -
 														//- times and converts the resultant character into lowercase
-			else								//if the character "st" is neither uppercase nor lowercase ex: spaces
+			else							//if the character "st" is neither uppercase nor lowercase ex: spaces
 				st
     		}
   	}
